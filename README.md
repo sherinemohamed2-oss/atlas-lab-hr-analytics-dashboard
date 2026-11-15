@@ -21,6 +21,35 @@ Managing human resources efficiently requires deep visibility into employee life
 
 ---
 
+## 🧮 Used Measures & Calculated Metrics
+To power the dynamic filtering, headcount evaluations, and performance calculations across the Atlas Lab dashboard, a dedicated _Measures table was implemented using Data Analysis Expressions (DAX).
+
+**1. Headcount & Attrition KPIs**
+Total Employees
+Computes the total historical and current workforce count based on unique employee identifiers.
+
+Active Employees
+Filters the workforce baseline to isolate active personnel currently employed by the organization.
+
+Inactive Employees
+Isolates employees who have separated from the company (attrition status marked as 'Yes').
+
+Attrition Rate (%)
+Calculates the overall organizational or segment-level turnover proportion relative to total headcount.
+
+**2. Compensation & Workforce Analytics**
+Average Salary
+Calculates the mean compensation value across ethnic groups.
+
+Years at Company (Tenure)
+Evaluates the active lifecycle duration of employees from their hire date to the current date or termination period.
+
+**3. Advanced Performance & Relationship Modeling**
+Satisfaction & Rating Measures (Context Transition)
+Measures evaluating performance dimensions (such as Job Satisfaction, Environment Satisfaction, Work-Life Balance, and Manager Ratings) utilize expanded relationships and context transitions via USERELATIONSHIP to connect active fact tables with date or rating dimension models seamlessly.
+
+---
+
 ## 🛠️ Key Process & Workflow
 
 ### **1. Data Preparation & Cleaning**
